@@ -1,0 +1,21 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Cache
+.mypy_cache
+.ruff_cache
+.pytest_cache
+*__pycache__*
+*.egg-info
+*.pyc
+
+# Machine specific
+.idea
+.vscode
+.DS_Store
+
+# Ignore .env files
+.env
+.envrc
+
+# ignore virtualenv
+.venv

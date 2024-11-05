@@ -29,9 +29,9 @@ python agent_team.py
 phi start dev_resources.py
 ```
 
-Open swagger UI at [http://localhost:8000/docs](http://localhost:8000/docs)
+5. Open swagger UI at [http://localhost:8000/docs](http://localhost:8000/docs) to test the API.
 
-5. Stop local docker containers
+6. Stop local docker containers
 
 ```sh
 phi stop dev_resources.py

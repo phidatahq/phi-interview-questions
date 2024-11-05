@@ -13,6 +13,8 @@ dev_image = DockerImage(
     name="phidata/interview-questions",
     tag="dev",
     path=str(ws_root),
+    # Set to True to build the image locally
+    enabled=False,
 )
 
 # -*- Dev database running on port 5432

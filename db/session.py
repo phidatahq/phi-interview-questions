@@ -6,7 +6,7 @@ from db.settings import db_settings
 # Create SQLAlchemy Engine using a database URI
 # https://fastapi.tiangolo.com/tutorial/sql-databases/#create-the-sqlalchemy-engine
 db_url = db_settings.get_db_url()
-db_engine: Engine = create_engine(db_url, pool_size=80, max_overflow=120, pool_pre_ping=True)
+db_engine: Engine = create_engine(db_url, pool_size=10, max_overflow=20, pool_pre_ping=True)
 
 # Create a SessionLocal class
 # https://fastapi.tiangolo.com/tutorial/sql-databases/#create-a-sessionlocal-class

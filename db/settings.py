@@ -4,8 +4,6 @@ from typing import Optional
 
 from pydantic_settings import BaseSettings
 
-from utils.log import logger
-
 
 class DbSettings(BaseSettings):
     """Database settings that can be set using environment variables.
@@ -38,7 +36,7 @@ class DbSettings(BaseSettings):
             from dev_resources import dev_db
 
             if getenv("PHI_RUNTIME") is None:
-                logger.debug("Using local connection")
+                print("Using local connection")
                 local_db_url = dev_db.get_db_connection_local()
                 if local_db_url:
                     return local_db_url

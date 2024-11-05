@@ -20,7 +20,7 @@ source .venv/bin/activate
 3. Run Agent team
 
 ```sh
-python agent_team.py
+python agents/news_reporter_team.py
 ```
 
 4. Start local docker containers
